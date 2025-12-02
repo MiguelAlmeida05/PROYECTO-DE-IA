@@ -119,18 +119,17 @@ Using the round number as a seed, all nodes independently determine the designat
 Convergence Check: The process stops earlier if convergence or performance degradation is detected, as defined in utils.py:
 
 ```PY
-def checkConvergence(scores, patience, threshold=0.01):
+def checkConvergence(scores:list[list[float, float, float]], patience:int, threshold:float=0.01)->bool:
     if len(scores) < patience:
         return False
 
     recent_scores = scores[-patience]
     for node in range(len(scores[-1])):
-        diff = recent_scores[node] - scores[-1][node]
-        # Check if the change is significant (positive or negative)
-        if abs(diff) > threshold:
-            return False
-
-    return True
+      diff = recent_scores[node] - scores[-1][node]
+      if diff > threshold:
+          return False
+      if diff < -threshold:
+          return False
 ```
 #### Centralized Mode
 
@@ -246,7 +245,7 @@ Training Cycle:
 - The server node initializes the round and waits for clients.
 - The server generates/loads a model and distributes it.
 - Clients train locally on their data partition.
-- Clients send updates; the server aggregates them (FedAvg).
+- Clients send the best model of the current subround; the server aggregates them (FedAvg).
 - This repeats for M sub-rounds before a new coordination step selects a new server.
 
 **Centralized Mode**
