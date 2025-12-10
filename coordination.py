@@ -212,7 +212,7 @@ def coordinate(peers, round):
 
     # 6. DETENER SERVIDOR LIMPIAMENTE
     stop_event.set() # Esto le dice al hilo que salga del while
-    hilo_servidor.join(timeout=2) # Esperamos a que cierre el socket
+    hilo_servidor.join(timeout=10) # Esperamos a que cierre el socket
 
     # 7. Seleccionar Servidor
     nodo_id = seleccionar_servidor(CSV_METRICS, round)
