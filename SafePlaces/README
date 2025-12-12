@@ -1,5 +1,10 @@
-## Proyecto de Análisis de Seguridad Urbana con K-Means y Mapa Interactivo
+## PETPLACE
 
-Este proyecto permite analizar datos de seguridad urbana, agrupar zonas según sus características usando K-Means, y visualizar los resultados en un mapa interactivo generado con Folium.
+# Planteamiento del Problema
 
-El sistema toma datos recopilados en campo (iluminación, comercios, reportes, flujo de personas, etc.) y crea un mapa con círculos de colores, donde cada color representa un clúster con un nivel similar de seguridad.
+La gestión manual de registros de mascotas en veterinarias, asociaciones animales y para dueños particularespresenta importantes desafíos, 
+incluyendo desorganización, pérdida de datos y dificultades en el seguimiento continuo. La dependencia de métodos tradicionales como libretas y archivos 
+físicos limita la eficiencia en el manejo de información crucial como historiales médicos, vacunas y cuidados diarios. Tanto instituciones como 
+propietarios individuales necesitan una solución accesible que les permita mantener un control organizado y confiable del bienestar de sus animales.
+
+# Objetivos del Proyecto
