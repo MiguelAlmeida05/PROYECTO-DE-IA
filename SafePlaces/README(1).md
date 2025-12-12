@@ -8,11 +8,17 @@ El sistema toma datos recopilados en campo (iluminación, comercios, reportes, f
 ## Características principales
 
 ✔ Carga un archivo Excel con datos reales recolectados
+
 ✔ Limpieza y estandarización del dataset
+
 ✔ Conversión de datos en formato numérico
+
 ✔ Clasificación automática de zonas usando K-Means (Machine Learning no supervisado)
+
 ✔ Generación de un mapa HTML interactivo con marcadores
+
 ✔ Círculos coloreados y ampliados para mejor visibilidad
+
 ✔ Código en Python, fácil de modificar o ampliar
 
 # ¿El proyecto usa Inteligencia Artificial?
