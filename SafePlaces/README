@@ -1,4 +1,4 @@
-** Proyecto de Análisis de Seguridad Urbana con K-Means y Mapa Interactivo
+## Proyecto de Análisis de Seguridad Urbana con K-Means y Mapa Interactivo
 
 Este proyecto permite analizar datos de seguridad urbana, agrupar zonas según sus características usando K-Means, y visualizar los resultados en un mapa interactivo generado con Folium.
 
